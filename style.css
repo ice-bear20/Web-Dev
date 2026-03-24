@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box; /* Includes padding and border in total width/height */
+    margin: 0;              /* Removes default margins */
+    padding: 0;             /* Removes default padding */
+}
+
+/* Styles the overall page */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Main font for the website */
+    line-height: 1.6;                          /* Adds comfortable spacing between lines */
+    background-color: #f4f7fb;                 /* Light background color */
+    color: #222;                               /* Dark gray text color */
+}
+
+header {
+    background-color: #1f3c88;      /* Dark blue background */
+    color: white;                   /* White text */
+    text-align: center;             /* Centers the text */
+    padding: 30px 20px;             /* Adds space inside the header */
+    border-bottom: 4px solid #16306d; /* Decorative border at the bottom */
+}
+
+/* Styles the subtitle under the main heading */
+.tagline {
+    margin-top: 10px;
+    font-size: 1.05rem;
+}
+
+/*NAVIGATION*/
+nav {
+    background-color: #ffffff;        /* White navigation background */
+    border-bottom: 1px solid #cccccc; /* Thin border underneath nav */
+    padding: 10px 0;
+}
+
+/* Navigation list container */
+.nav-list {
+    list-style: none;       /* Removes bullets */
+    display: flex;          /* Places items in a row */
+    justify-content: center;/* Centers the menu */
+    flex-wrap: wrap;        /* Allows menu to wrap on smaller screens */
+    gap: 18px;              /* Space between menu items */
+}
+
+/* Styles the navigation links */
+.nav-list a {
+    text-decoration: none; /* Removes link underline */
+    color: #1f3c88;        /* Blue link color */
+    font-weight: bold;
+    padding: 8px 12px;     /* Adds clickable space around text */
+    border-radius: 6px;    /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+.nav-list a:hover {
+    background-color: #1f3c88;
+    color: white;
+}
+
+/*MAIN LAYOUT*/
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Reusable card style for sections */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #d8dce3;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* Two-column grid layout */
+.grid-two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Removes extra spacing if card is inside another section */
+.inner-card {
+    margin-bottom: 0;
+}
+
+/*TEXT STYLING*/
+h1, h2, h3 {
+    margin-bottom: 12px;
+}
+
+p, ul, ol {
+    margin-bottom: 12px;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+/*TABLE STYLING*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #b8c0cc;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e8eefc;
+}
+
+/*IMAGE STYLING*/
+img {
+    max-width: 220px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Smaller centered text under an image */
+.small-text {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #555;
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    background-color: #1f3c88;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #dce8ff;
+}
+
+/* Example ID selector if you want to highlight something specific */
+#highlight {
+    color: #b22222;
+    font-weight: bold;
+}
+
+/* Make grid section heading span full width */
+.grid-two h2 {
+    grid-column: 1 / -1;
+}
