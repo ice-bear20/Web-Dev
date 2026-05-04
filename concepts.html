@@ -4,6 +4,10 @@
 
 <head>
 	<meta charset="UTF-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mobile responsiveness -->
+	
     <title>History of HTML | Key Concepts</title>
 
     <link rel="stylesheet" href="style.css">
@@ -21,13 +25,39 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="origins.html">Origins</a></li>
             <li><a href="evolution.html">Evolution</a></li>
-            <li><a href="concepts.html">Key Concepts</a></li>
+            <li><a href="concepts.html" class="active">Key Concepts</a></li>
             <li><a href="references.html">References</a></li>
             <li><a href="about.html">About</a></li>
+			<li><a href="quiz.html">Quiz</a></li>
         </ul>
     </nav>
 
     <main class="container">
+
+		<section class="card">
+			<h2>HTTP and How It Works with HTML</h2>
+
+			<p>
+				While HTML is used to structure webpages, HTTP (HyperText Transfer Protocol) is the system
+				that allows those webpages to be delivered from a server to a user's browser. HTTP works
+				using a request and response model, where a client requests a webpage and a server sends
+				the requested content back.
+			</p>
+
+			<p>
+				When a user enters a URL, their browser sends an HTTP request to a web server. The server
+				then responds with files such as HTML, CSS, and JavaScript, which the browser combines
+				to display the webpage. Because webpages contain many elements, multiple HTTP requests
+				are often sent to fully load a page.
+			</p>
+
+			<p>
+				HTTP has evolved over time to improve performance and efficiency. Newer versions introduced
+				features such as faster data transfer, better handling of multiple requests, and improved
+				security through HTTPS.
+			</p>
+			<img src="httpsxhtml.jpg" alt="A picture of HTML and HTTPS with a cutie Pixel Dinosaur" class="large-image">
+		</section>
 
         <section class="card">
             <!-- Main card containing all concept cards -->
