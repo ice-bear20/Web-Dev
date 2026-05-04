@@ -73,6 +73,8 @@ nav {
     border: 1px solid #d8dce3;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+	overflow-x: auto; /* Allows horizontal scrolling if content (like tables) is too wide on mobile */
+
 }
 
 /* Two-column grid layout */
@@ -156,4 +158,144 @@ footer a {
 /* Make grid section heading span full width */
 .grid-two h2 {
     grid-column: 1 / -1;
+}
+
+/* QUIZ STYLES */
+.quiz-question {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f9fbff;
+    border: 1px solid #d8dce3;
+    border-radius: 8px;
+}
+
+.quiz-question input[type="text"] {
+    width: 100%;
+    max-width: 420px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #b8c0cc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.quiz-question label {
+    display: block;
+    margin-top: 8px;
+}
+
+.quiz-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.quiz-buttons button {
+    background-color: #1f3c88;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.quiz-buttons button:hover {
+    background-color: #16306d;
+}
+
+.results-box {
+    margin-top: 20px;
+}
+
+.correct {
+    color: #1d7a2f;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: #b22222;
+    font-weight: bold;
+}
+
+/* Styles code blocks (<pre>) to make early HTML examples easier to read and visually distinct */
+pre {
+    background-color: #f1f4f9;
+    border: 1px solid #d8dce3;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: Consolas, monospace;
+}
+
+/* Makes the homepage illustration larger */
+.large-image {
+    max-width: 100%;
+    width: 500px;
+}
+
+/* Default styles: phones first */
+body {
+  font-size: 16px;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* Images shrink on small screens */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablet/desktop styles */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* Small phone styles */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+}
+
+/* Style all navigation links */
+nav a {
+  text-decoration: none;   /* Removes underline from links */
+  padding: 10px;           /* Adds space inside each link (makes it easier to click) */
+  color: black;            /* Default text color */
+}
+
+/* Style ONLY the active/current page link */
+nav a.active {
+  color: white;            /* Changes text color for active page */
+  background-color: #007BFF; /* Adds a blue background highlight */
+  border-radius: 5px;      /* Rounds the corners for a nicer look */
 }

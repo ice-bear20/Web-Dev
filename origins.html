@@ -4,6 +4,10 @@
 
 <head>
     <meta charset="UTF-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mobile responsiveness -->
+	
     <title>History of HTML | Origins</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,11 +22,12 @@
     <nav>
         <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="origins.html">Origins</a></li>
+            <li><a href="origins.html" class="active">Origins</a></li>
             <li><a href="evolution.html">Evolution</a></li>
             <li><a href="concepts.html">Key Concepts</a></li>
             <li><a href="references.html">References</a></li>
             <li><a href="about.html">About</a></li>
+			<li><a href="quiz.html">Quiz</a></li>
         </ul>
     </nav>
 
@@ -32,29 +37,15 @@
             <!-- First section explaining how HTML started -->
             <h2>How HTML Began</h2>
             <p>
-                HTTP (Hyper Text Transfer Protocol) is the foundation of the WWW (World Wide Web) first
-				developed in 1989 by Tim Berner’s-Lee, the inventor of the WWW. The reason why
-				HTTP/HTTPS is so important to the WWW is that it ensures that your website has not been
-				tampered with, which gives your website credibility, and gives users peace of mind. Common
-				people tampering with user experiences are malicious intruders trying to exploit unprotected
-				communications (such as a man in the middle attack) to trick the user to give up sensitive
-				information, install malware, or insert their own resources (like a backdoor of a sort). Every part
-				of a webpage that travels between the user's machine and your websites, such as images, cookies,
-				and scripts, can be manipulated if not protected correctly. Another group of people that will try
-				and intrude into your webpages are 3rd party companies who don’t have the necessary malicious
-				intent, but they are hindering the user, such as ISPs that inject ads into pages (Basques, 2015).
-				HTTP has evolved from a simple request-response protocol into a universally used a respected
-				foundation of the modern web that protects users and websites every day. Over the years it has
-				adapted to the explosion of the internet through increased performance, scalability, and
-				reliability.
+                    HTML, which stands for HyperText Markup Language, was created by Tim Berners-Lee in the early 1990s.
+					It was designed as a simple way to structure and share documents on the World Wide Web. Early HTML
+					allowed authors to organize text with headings, paragraphs, and links, making it easier for people
+					to navigate information online.
             </p>
             <p>
-                HTTP has been there since day one of the WWW, and it has since
-				evolved as well. The very first version of HTTP didn’t initially have a version number, but it was
-				later numbered for HTTP/0.9. This version was extremely simple, as it consisted of a simple line
-				of GET, which was the only method at the time, followed by the path to the resource (i.e., GET
-				/my-page.html). The response was just as simple, as it produced a text only webpage 
-                &lt;html&gt; text-only web page &lt;/html&gt;
+					The earliest versions of HTML were very basic, but they introduced the core idea of using tags to
+					describe content. This made webpages more organized and readable. As the web grew, HTML also grew,
+					adding new elements and features that helped developers create richer and more useful websites.
             </p>
         </section>
 
@@ -71,6 +62,12 @@
         <section class="card">
             <!-- Table section showing basic early HTML features -->
             <h2>Early HTML Features</h2>
+			    <p>
+					Early HTML documents were simple text-based files that used tags to organize content.
+					These tags told the browser how to display information, such as where a heading or
+					paragraph should appear. Unlike modern HTML, early versions had very limited styling
+					and relied mostly on plain text.
+				</p>
             <table>
                 <thead>
                     <tr>
@@ -98,6 +95,26 @@
                 </tbody>
             </table>
         </section>
+		
+		<section class="card">
+    <h2>Example of Early HTML</h2>
+				<p>
+					Early HTML pages were very simple and mostly text-based. Below is an example of what
+					a basic HTML document might have looked like:
+				</p>
+
+				<pre>
+			&lt;html&gt;
+			  &lt;head&gt;
+				&lt;title&gt;My First Webpage&lt;/title&gt;
+			  &lt;/head&gt;
+			  &lt;body&gt;
+				&lt;h1&gt;Welcome&lt;/h1&gt;
+				&lt;p&gt;This is a simple webpage.&lt;/p&gt;
+			  &lt;/body&gt;
+			&lt;/html&gt;
+				</pre>
+		</section>
 
     </main>
 

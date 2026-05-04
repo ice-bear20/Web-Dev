@@ -4,6 +4,10 @@
 
 <head>
     <meta charset="UTF-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mobile responsiveness -->
+	
     <title>History of HTML | Evolution</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,10 +23,11 @@
         <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="origins.html">Origins</a></li>
-            <li><a href="evolution.html">Evolution</a></li>
+            <li><a href="evolution.html" class="active">Evolution</a></li>
             <li><a href="concepts.html">Key Concepts</a></li>
             <li><a href="references.html">References</a></li>
             <li><a href="about.html">About</a></li>
+			<li><a href="quiz.html">Quiz</a></li>
         </ul>
     </nav>
 
@@ -41,12 +46,12 @@
 
             <article class="card">
                 <h3>HTML 2.0</h3>
-                <p>
-                    HTML 2.0 was one of the first official standards. It helped bring consistency
-                    to web page creation. It was a multiplexed protocol, which
-					meant parallel requests can be made over the same connection. It also compressed headers,
-					which removed the duplication and overhead of data transmitted
-                </p>
+                    <p>
+						HTML 2.0 was one of the first official standards for HTML. It helped bring consistency
+						to webpage creation by defining common elements such as headings, paragraphs, lists,
+						and links. This version gave developers a more reliable foundation for building pages
+						that could work across different browsers.
+					</p>
             </article>
 
             <article class="card">
@@ -77,7 +82,51 @@
                     like header, nav, section, and footer.
                 </p>
             </article>
+			
+			<article class="card">
+			<img src="html-versions.jpg" alt="Illustration of HTML and its different versions" class="large-image">
+			</article>
         </section>
+
+		<section class="card">
+			<h2>HTML Version Comparison</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Version</th>
+						<th>Main Contribution</th>
+						<th>Why It Mattered</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>HTML 2.0</td>
+						<td>Standardized core tags</td>
+						<td>Created a common structure for early webpages</td>
+					</tr>
+					<tr>
+						<td>HTML 3.2</td>
+						<td>Added tables and more layout features</td>
+						<td>Gave developers more control over page design</td>
+					</tr>
+					<tr>
+						<td>HTML 4.01</td>
+						<td>Improved styling and scripting support</td>
+						<td>Helped separate structure from presentation</td>
+					</tr>
+					<tr>
+						<td>XHTML</td>
+						<td>Stricter syntax rules</td>
+						<td>Encouraged cleaner markup</td>
+					</tr>
+					<tr>
+						<td>HTML5</td>
+						<td>Added multimedia and semantic tags</td>
+						<td>Made modern web development easier</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
 
         <section class="card">
             <h2>Why HTML5 Mattered</h2>
@@ -88,6 +137,7 @@
                 <li>It helped create cleaner, more accessible websites.</li>
             </ol>
         </section>
+		
     </main>
 
     <footer>
